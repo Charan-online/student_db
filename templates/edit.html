@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>✏️ Edit Student</h1>
+
+    <form method="POST">
+        <input type="text" name="name" placeholder="Name" value="{{ student[1] }}">
+        <input type="email" name="email" placeholder="Email" value="{{ student[2] }}">
+        <input type="text" name="branch" placeholder="Branch" value="{{ student[3] }}">
+        <br><br>
+        <button type="submit" class="btn">Update Student</button>
+    </form>
+
+    <a class="back-link" href="/">⬅ Back to Home</a>
+</div>
+</body>
+</html>

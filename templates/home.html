@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student DB - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>🎓 Welcome to Student Database</h1>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="flash {{ category }}">{{ message }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <div class="welcome-text">
+        <p>Select an operation:</p>
+    </div>
+
+    <div class="menu-buttons">
+        <a href="/add" class="btn">Add Student</a>
+        <a href="/view" class="btn">View Students</a>
+    </div>
+</div>
+</body>
+</html>
+
