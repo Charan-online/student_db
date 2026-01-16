@@ -121,9 +121,3 @@ This project is licensed under the **MIT License**.
 Engineering Student
 GitHub: [https://github.com/Charan-online](https://github.com/Charan-online)
 
-- screenshots setup
-- interview Q&A for THIS project
-- or deploy it online  
-
-Just say the word 👊
-```
