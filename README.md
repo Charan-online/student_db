@@ -1,6 +1,6 @@
 # 🎓 Student Database Management System
 
-A simple **Python + SQLite** based CLI application to manage student records with full CRUD operations. This project is beginner-friendly, interview-ready, and demonstrates real-world database handling with proper validations.
+A simple **Python + SQLite** based CLI application to manage student records with full CRUD operations. This project is beginner-friendly and demonstrates real-world database handling with proper validations.
 
 ---
 
