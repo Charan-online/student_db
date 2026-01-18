@@ -7,17 +7,15 @@
 </head>
 <body>
 <div class="container">
-    <h1>✏️ Edit Student</h1>
-
-    <form method="POST">
-        <input type="text" name="name" placeholder="Name" value="{{ student[1] }}">
-        <input type="email" name="email" placeholder="Email" value="{{ student[2] }}">
-        <input type="text" name="branch" placeholder="Branch" value="{{ student[3] }}">
-        <br><br>
-        <button type="submit" class="btn">Update Student</button>
+    <h1>Edit Student {{ student[0] }}</h1>
+    <form method="post">
+        <input type="text" name="name" value="{{ student[1] }}" required><br>
+        <input type="email" name="email" value="{{ student[2] }}" required><br>
+        <input type="text" name="branch" value="{{ student[3] }}" required><br>
+        <input type="password" name="password" placeholder="Change password (optional)"><br>
+        <button type="submit" class="btn">Update</button>
+        <a href="{{ url_for('admin_home') }}" class="btn back-link">Cancel</a>
     </form>
-
-    <a class="back-link" href="/">⬅ Back to Home</a>
 </div>
 </body>
 </html>

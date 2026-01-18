@@ -7,23 +7,12 @@
 </head>
 <body>
 <div class="container">
-    <h1>❌ Delete Student</h1>
-
-    {% if student %}
-    <p>Are you sure you want to delete <strong>{{ student[1] }}</strong> (Roll No: {{ student[0] }})?</p>
-
-    <div class="confirm-buttons">
-        <form method="POST" action="/confirm_delete/{{ student[0] }}" style="display:inline;">
-            <button type="submit" class="delete-btn">Yes, Delete</button>
-        </form>
-        <a class="back-link" href="/">No, Cancel</a>
-    </div>
-    {% else %}
-    <p class="error">❌ Student not found!</p>
-    <a class="back-link" href="/">Back to Home</a>
-    {% endif %}
+    <h1>Delete Student</h1>
+    <p>Are you sure you want to delete <strong>{{ student[1] }}</strong> ({{ student[0] }})?</p>
+    <form method="post" action="{{ url_for('admin_confirm_delete', roll_no=student[0]) }}">
+        <button type="submit" class="btn delete-btn">Yes, Delete</button>
+        <a href="{{ url_for('admin_home') }}" class="btn back-link">Cancel</a>
+    </form>
 </div>
 </body>
 </html>
-
-
