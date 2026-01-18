@@ -83,9 +83,7 @@ python app.py
 ```
 http://127.0.0.1:5000/
 ```
-
 ---
-
 ## 🧑‍💻 How It Works
 
 1. Open the website → You’ll see a **welcome page**.
@@ -104,9 +102,6 @@ http://127.0.0.1:5000/
 * Error handling & validations
 * Frontend-backend integration
 * Git & GitHub usage
-
-
-
 ---
 
 ## 📄 License
